@@ -63,10 +63,18 @@ namespace UsersApi.Controllers
                         {
                             if (reader.Read())
                             {
+                                string email = reader["email"].ToString();
                                 string passwordHash = reader["PasswordHash"].ToString();
+
                                 if(VerifyPassword(user.passwordHash, passwordHash))
                                 {
-                                    var token = GenerateToken(reader);
+                                    User user1 = new User()
+                                    {
+                                        idUser = (int)reader["idUser"],
+                                        email = email
+                                    };
+
+                                    var token = GenerateToken(user);
                                     return Ok(new { token });
                                 }
                                 else
@@ -107,19 +115,30 @@ namespace UsersApi.Controllers
             return HashPassword(passwordHash) == password;
         } 
 
-        private string GenerateToken(SqlDataReader reader)
+        private string GetJwtKey()
+        {
+            var key = _configuration["Jwt:Key"];
+            if(string.IsNullOrEmpty(key))
+            {
+                throw new InvalidOperationException("La configuracion de Jwt:Key no existe o esta vacia");
+            }
+            return key; 
+        }
+
+        private string GenerateToken(User user)
         {
             var claims = new[]
             {
-                new Claim(ClaimTypes.Name, reader["name"].ToString()),
-                new Claim(ClaimTypes.Email, reader["email"].ToString())
+                new Claim(ClaimTypes.Name, user.name),
+                new Claim(ClaimTypes.Email, user.email)
             };
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            var key = GetJwtKey();
+            var creds = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key)), SecurityAlgorithms.HmacSha256);
 
-            var token = new JwtSecurityToken(_configuration["Jwt:Issuer"],
-                _configuration["Jwt:Audience"],
+            var token = new JwtSecurityToken(
+               issuer: _configuration["Jwt:Issuer"],
+              audience:  _configuration["Jwt:Audience"],
                 claims,
                 expires: DateTime.UtcNow.AddMinutes(30),
                 signingCredentials: creds);
