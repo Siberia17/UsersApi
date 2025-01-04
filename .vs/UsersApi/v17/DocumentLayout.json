@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\UsersApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0D1CE91B-3ABD-4029-A5E5-0B193B50B290}|UsersApi\\UsersApi.csproj|c:\\users\\eligi\\desktop\\siberia gonzalez\\examen\\usersapi\\usersapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1CE91B-3ABD-4029-A5E5-0B193B50B290}|UsersApi\\UsersApi.csproj|solutionrelative:usersapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0D1CE91B-3ABD-4029-A5E5-0B193B50B290}|UsersApi\\UsersApi.csproj|c:\\users\\eligi\\desktop\\siberia gonzalez\\examen\\usersapi\\usersapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D1CE91B-3ABD-4029-A5E5-0B193B50B290}|UsersApi\\UsersApi.csproj|solutionrelative:usersapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\UsersApi\\UsersApi\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "UsersApi\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\UsersApi\\UsersApi\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "UsersApi\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABMAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T03:21:36.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "UsersApi.csproj",
               "DocumentMoniker": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\UsersApi\\UsersApi\\UsersApi.csproj",
               "RelativeDocumentMoniker": "UsersApi\\UsersApi.csproj",
@@ -34,12 +51,11 @@
               "RelativeToolTip": "UsersApi\\UsersApi.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-03T16:20:42.384Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-03T16:20:42.384Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\UsersApi\\UsersApi\\appsettings.json",
               "RelativeDocumentMoniker": "UsersApi\\appsettings.json",
@@ -47,18 +63,17 @@
               "RelativeToolTip": "UsersApi\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-03T14:11:45.956Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-03T14:11:45.956Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\UsersApi\\UsersApi\\Program.cs",
               "RelativeDocumentMoniker": "UsersApi\\Program.cs",
               "ToolTip": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\UsersApi\\UsersApi\\Program.cs",
               "RelativeToolTip": "UsersApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-03T13:19:38.776Z",
               "EditorCaption": ""
